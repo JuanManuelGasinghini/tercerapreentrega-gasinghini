@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    width: auto;
+    height: 100vh;
+background-color: rgb(46, 177, 206);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.form-content {
+width: 100%;
+max-width: 450px;
+background-color: beige;
+padding: 50px 60px 70px;
+text-align: center;
+border-radius: 25px;
+}
+
+.form-content h1 {
+font-size: 30px;
+margin-bottom: 60px;
+color: blueviolet;
+position: relative;
+}
+
+.form-content h1::after{
+content: '';
+width: 30px;
+height: 4px;
+border-radius: 3px;
+background: blue;
+position: absolute;
+bottom: -12px;
+left: 50%;
+transform: translateX(-50px);
+}
+
+.input-field{
+    background-color: blueviolet;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: rgb(46, 177, 206);
+}
+
+input::placeholder{
+    color: blanchedalmond;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color: rgb(17, 82, 17);
+}
+
+form p {
+    background-color: rgb(46, 177, 206);
+    color: white;
+    text-align: left;
+    font-size: 13px;
+}
+form p a {
+    background-color:  rgb(46, 177, 206);
+    color: rgb(150, 229, 150);
+    margin-left: 5px;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+  justify-content: space-around;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: rgb(17, 82, 17);
+    margin-top: 10%;
+    color: antiquewhite;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+cursor: pointer;
+transition: background 1s;
+}
+
+.input-group {
+    height: 250px;
+}
+
+.btn-field button.disable {
+    background-color: rgb(17, 82, 17);
+    margin-top: 10%;
+}
+
+
+
+
+
