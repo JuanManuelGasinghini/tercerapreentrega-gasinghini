@@ -26,7 +26,7 @@ border-radius: 25px;
 .form-content h1 {
 font-size: 30px;
 margin-bottom: 60px;
-color: blueviolet;
+color: rgb(6, 109, 32);
 position: relative;
 }
 
@@ -44,9 +44,9 @@ transform: translateX(-50px);
 
 
 .input-field{
-    background-color: blueviolet;
+    background-color: rgb(6, 109, 32);
     margin: 15px 0;
-    border-radius: 3px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
   transition: max-height 0.5s;
@@ -68,7 +68,7 @@ input::placeholder{
 
 .input-field i {
     margin-left: 15px;
-    color: rgb(17, 82, 17);
+    color: rgb(212, 130, 15);
 }
 
 form p {
@@ -78,15 +78,16 @@ form p {
     font-size: 13px;
 }
 form p a {
-    background-color:  rgb(46, 177, 206);
-    color: rgb(150, 229, 150);
-    margin-left: 5px;
+    background-color:  rgb(212, 130, 15);
+    color: white;
+    margin-left: 10px;
 }
 
 .btn-field {
     width: 100%;
     display: flex;
-  justify-content: space-around;
+    align-items: center;
+ justify-content: flex-start;
 }
 
 .btn-field button {
@@ -94,9 +95,9 @@ form p a {
     font-size: 16px;
     background-color: rgb(17, 82, 17);
     margin-top: 10%;
-    color: antiquewhite;
+     color: antiquewhite;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 25px;
     border: 0;
     outline: 0;
 cursor: pointer;
@@ -108,8 +109,9 @@ transition: background 1s;
 }
  
 .btn-field button.disable {
-    background-color: rgb(17, 82, 17);
-    color: bisque;
+
+    background-color: rgb(212, 130, 15);
+    color:bisque;
     margin-top: 10%;
 }
 
