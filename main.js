@@ -1,31 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const signUp = document.getElementById("signUp");
-    const signIn = document.getElementById("signIn");
-    const nameInput = document.getElementById("nameInput");
-    const title = document.getElementById("title");
-
-    signIn.addEventListener("click", function() {
-        nameInput.style.maxHeight = "0";
-        title.innerHTML = "Login";
-        signUp.classList.add("disable");
-        signIn.classList.remove("disable");
-    });
-
-    signUp.addEventListener("click", function() {
-        nameInput.style.maxHeight = "60px";
-        title.innerHTML = "Registro";
-        signUp.classList.remove("disable");
-        signIn.classList.add("disable");
-
-        const name = nameInput.value.trim(); 
-        if (name !== "") {
-            localStorage.setItem("user_name", name);
-        }
-    });
-
-    const storedName = localStorage.getItem("user_name");
-    if (storedName) {
-        nameInput.value = storedName;
-    }
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const formularioDeRegistro= document.getElementById('formularioDeRegistro');
+    const registroBtn = document.getElementById('registroBtn');
+    
+    registroBtn.addEventListener('click', function() {
+      const nombre = document.getElementById('nombre').value;
+      const apellido = document.getElementById('apellido').value;
+      const email = document.getElementById('email').value;
+      const celular = document.getElementById('celular').value;
+      
+      
+      const usuario = { nombre, apellido, email, celular };
+      console.log('click', usuario);
+      
+   });
+  });
+  
 
